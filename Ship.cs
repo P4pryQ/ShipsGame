@@ -52,7 +52,7 @@ namespace Ships
 
         public char setDirection()
         {
-            Console.WriteLine("Podaj kierunek w który statek ma sie ustawić");
+            Console.WriteLine("Podaj kierunek w który statek ma się ustawić");
             Console.WriteLine("V - Pionowo");
             Console.WriteLine("H - Poziom");
             string Direction = Console.ReadLine().ToUpper();
