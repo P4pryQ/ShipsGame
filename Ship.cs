@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,34 +24,28 @@ namespace Ships
 
         public int setLettler()
         {
-            string lettlerShip;
+            var letterToIndexMap = new Dictionary<string, int>
+            {
+                { "A", 0 },
+                { "B", 1 },
+                { "C", 2 },
+                { "D", 3 },
+                { "E", 4 },
+                { "F", 5 },
+                { "G", 6 },
+                { "H", 7 },
+                { "I", 8 },
+                { "J", 9 }
+            };
+
             while (true)
             {
-                Console.WriteLine("Napisz litere pola:");
-                lettlerShip = Console.ReadLine().ToUpper();
+                Console.WriteLine("Napisz literę pola:");
+                string lettlerShip = Console.ReadLine().ToUpper();
 
-                switch (lettlerShip)
+                if (letterToIndexMap.TryGetValue(lettlerShip, out int index))
                 {
-                    case "A":
-                        return 0;
-                    case "B":
-                        return 1;
-                    case "C":
-                        return 2;
-                    case "D":
-                        return 3;
-                    case "E":
-                        return 4;
-                    case "F":
-                        return 5;
-                    case "G":
-                        return 6;
-                    case "H":
-                        return 7;
-                    case "I":
-                        return 8;
-                    case "J":
-                        return 9;
+                    return index;
                 }
             }
         }
@@ -59,16 +53,16 @@ namespace Ships
         public char setDirection()
         {
             Console.WriteLine("Podaj kierunek w który statek ma sie ustawić");
-            Console.WriteLine("P - Pionowo");
-            Console.WriteLine("O - Poziom");
+            Console.WriteLine("V - Pionowo");
+            Console.WriteLine("H - Poziom");
             string Direction = Console.ReadLine().ToUpper();
-            if (Direction == "P")
+            switch (Direction)
             {
-                return 'V'; //vertical
-            }
-            else
-            {
-                return 'H'; //horizontal
+                case "V":
+                    return 'V';
+                case "H":
+                default:
+                    return 'H';
             }
         }
 
