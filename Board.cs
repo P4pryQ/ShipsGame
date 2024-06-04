@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -85,12 +85,7 @@ namespace Ships
 
         public Boolean isShip(int vertical, int horizontal)
         {
-            if (board[vertical, horizontal] == "V  ")
-            {
-                return true;
-            }
-
-            return false;
+            return board[vertical, horizontal] == "V  ";
         }
 
         public void hitShip(int vertical, int horizontal)
