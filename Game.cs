@@ -78,7 +78,7 @@ namespace Ships
             Console.WriteLine("X - trafiony");
             Console.WriteLine("V - statek");
             Console.WriteLine();
-            Console.WriteLine("Aby uruchomić grę kliknij dowolny przycisk");
+            Console.WriteLine("Aby uruchomić grę kliknij dowolny klawisz");
 
             Console.ReadKey();
             Console.Clear();
