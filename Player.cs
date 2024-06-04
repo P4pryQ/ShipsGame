@@ -18,7 +18,7 @@ namespace Ships
                 Console.WriteLine("Gratulacje! Trafiłeś, teraz dostajesz w nagrodę kolejny ruch");
             }
             Console.WriteLine($"Ruch gracza {player}");
-            Console.WriteLine("Jeśli jesteś gotowy kliknij dowolny przycisk");
+            Console.WriteLine("Jeśli jesteś gotowy kliknij dowolny klawisz");
             Console.ReadKey();
             Console.Clear();
         }
