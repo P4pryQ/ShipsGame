@@ -34,7 +34,7 @@ namespace Ships
             Console.WriteLine("Gracz 1: " + player1Wins + " zwycięstwa");
             Console.WriteLine("Gracz 2: " + player2Wins + " zwycięstwa");
             Console.WriteLine();
-            Console.WriteLine("Kliknij dowolny przycisk aby kontynuować");
+            Console.WriteLine("Kliknij dowolny klawisz aby kontynuować");
             Console.ReadKey();
             IsContinue(player, player1Wins, player2Wins);
         }
