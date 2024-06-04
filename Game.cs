@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -24,14 +24,14 @@ namespace Ships
 
         public void startGame()
         {
-            Instruction();
-            player1.ready(1, false);
+            ShowInstruction();
+            player1.IsReady(1, false);
             SetShip(player1, boardPlayer1, 1);
             SetShip(player1, boardPlayer1, 2);
             SetShip(player1, boardPlayer1, 3);
             SetShip(player1, boardPlayer1, 4);
             playerMove = 2;
-            player2.ready(2, false);
+            player2.IsReady(2, false);
             SetShip(player2, boardPlayer2, 1);
             SetShip(player2, boardPlayer2, 2);
             SetShip(player2, boardPlayer2, 3);
@@ -54,7 +54,7 @@ namespace Ships
 
         }
 
-        public void Instruction()
+        public void ShowInstruction()
         {
             Console.Clear();
             Console.WriteLine("INSTRUKCJA GRY W STATKI");
@@ -87,7 +87,7 @@ namespace Ships
         public void TurnPlayer(Player player, Board boardOpponent, Board myBoard, Board myBoardOpponent)
         {
             int horizontal, vertical;
-            player.ready(playerMove, isHit);
+            player.IsReady(playerMove, isHit);
 
             Console.WriteLine("TWOJA PLANSZA:");
             Console.WriteLine();
@@ -130,7 +130,7 @@ namespace Ships
                 {
                     player2Wins++;
                 }
-                player.endGame(playerMove, player1Wins, player2Wins);
+                player.IsEndGame(playerMove, player1Wins, player2Wins);
             }
 
             Console.Clear();
