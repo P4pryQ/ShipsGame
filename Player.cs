@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic.FileIO;
+using Microsoft.VisualBasic.FileIO;
 using Ships;
 using System;
 using System.Collections.Generic;
@@ -11,19 +11,19 @@ namespace Ships
     internal class Player
     {
 
-        public void ready(int player, Boolean isHit)
+        public void IsReady(int player, Boolean isHit)
         {
             if (isHit)
             {
                 Console.WriteLine("Gratulacje! Trafiłeś, teraz dostajesz w nagrodę kolejny ruch");
             }
             Console.WriteLine($"Ruch gracza {player}");
-            Console.WriteLine("Jeśli jesteś gotowy klinij dowolny przycisk");
+            Console.WriteLine("Jeśli jesteś gotowy kliknij dowolny przycisk");
             Console.ReadKey();
             Console.Clear();
         }
 
-        public void endGame(int player, int player1Wins, int player2Wins)
+        public void IsEndGame(int player, int player1Wins, int player2Wins)
         {
             string choose;
             Console.Clear();
@@ -36,10 +36,10 @@ namespace Ships
             Console.WriteLine();
             Console.WriteLine("Kliknij dowolny przycisk aby kontynuować");
             Console.ReadKey();
-            continueOrStop(player, player1Wins, player2Wins);
+            IsContinue(player, player1Wins, player2Wins);
         }
 
-        public void continueOrStop(int player, int player1Wins, int player2Wins)
+        public void IsContinue(int player, int player1Wins, int player2Wins)
         {
 
 
