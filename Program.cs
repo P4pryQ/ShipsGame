@@ -1,4 +1,4 @@
-﻿namespace Ships
+namespace Ships
 {
     internal class Program
     {
