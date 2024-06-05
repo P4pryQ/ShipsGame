@@ -1,0 +1,14 @@
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\Ships.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\Ships.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\Ships.AssemblyInfo.cs
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\Ships.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\2f\statki\Ships\bin\Debug\net6.0\Ships.exe
+C:\Users\Student\Documents\2f\statki\Ships\bin\Debug\net6.0\Ships.deps.json
+C:\Users\Student\Documents\2f\statki\Ships\bin\Debug\net6.0\Ships.runtimeconfig.json
+C:\Users\Student\Documents\2f\statki\Ships\bin\Debug\net6.0\Ships.dll
+C:\Users\Student\Documents\2f\statki\Ships\bin\Debug\net6.0\Ships.pdb
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\Ships.dll
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\refint\Ships.dll
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\Ships.pdb
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\Ships.genruntimeconfig.cache
+C:\Users\Student\Documents\2f\statki\Ships\obj\Debug\net6.0\ref\Ships.dll
